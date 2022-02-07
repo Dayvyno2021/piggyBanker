@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className='text-light d-flex header justify-content-around align-items-center'>
       <div className='cursor'>
-        <img className="img-fluid pigB" src="https://knightmint.netlify.app/static/media/piggylogo.2559fdadf20ddcebd28b.jpg" alt="piggyBanker" />
+        <img className="img-fluid pigB" src="https://knightmint.netlify.app/static/media/piggylogo.2559fdadf20ddcebd28b.jpg" alt="piggyBanker" width={'300px'}/>
       </div>
 
       <ul className='headerList d-flex align-items-center'>

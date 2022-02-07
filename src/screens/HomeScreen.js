@@ -28,7 +28,7 @@ const HomeScreen = () => {
   let web3;
 
   const onboard = Onboard({
-    dappId: "d2a35f6d-31cf-4d91-9e55-1dc9ca8af1b6",       // [String] The API key created by step one above
+    dappId: "50a5b451-dbed-4d55-8475-bee5cc60cc09",       // [String] The API key created by step one above
     networkId: 4,  // [Integer] The Ethereum network ID your Dapp uses.
     subscriptions: {
       wallet: wallet => {
@@ -45,12 +45,12 @@ const HomeScreen = () => {
 
   return (
     <div className='container d-flex justify-content-center align-items-center pt-5'>
-      <Row className='container-parent rounded d-flex mt-5'>
-        <Col md={6} className='child1'>
-          <img className='rounded-start' src="/images/image1.gif" alt="image1" height='470px' />
+      <Row className='container-parent d-flex justify-content-center'>
+        <Col md={6} className='child1 d-flex align-items-center'>
+          <img className='imgGif' src="/images/image1.gif" alt="image1" width={'470px'} />
         </Col>
 
-        <Col md={6} className='child2 rounded-end'>
+        <Col md={6} className='child2'>
           <Col md={12} className='justify-content-center align-items-center'>
             <h2 className='text-center text-light mt-5 font-2x1 font-bold'>LIMITED SALES IS NOW LIVE</h2>
             <h1 className='text-center text-light font-4x1 font-bold'>MINT YOUR NFT NOW</h1>
