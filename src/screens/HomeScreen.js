@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import Onboard from 'bnc-onboard';
 import Web3 from 'web3';
 
@@ -44,13 +44,13 @@ const HomeScreen = () => {
   }
 
   return (
-    <div className='container d-flex justify-content-center align-items-center pt-5'>
-      <Row className='container-parent d-flex justify-content-center'>
-        <Col md={6} className='child1 d-flex align-items-center'>
-          <img className='imgGif' src="/images/image1.gif" alt="image1" width={'470px'} />
+    <Container className='d-flex justify-content-center align-items-center'>
+      <Row className='container-parent'>
+        <Col xs={8} md={6} className='d-flex justify-content-end p-0 m-0'   >
+          <img className='imgGif img-fluid float-end' src="/images/image1.gif" alt="image1" style={{height: '500px'}}/>
         </Col>
 
-        <Col md={6} className='child2'>
+        <Col xs={10} md={6} className='child2' style={{height: '500px'}}>
           <Col md={12} className='justify-content-center align-items-center'>
             <h2 className='text-center text-light mt-5 font-2x1 font-bold'>LIMITED SALES IS NOW LIVE</h2>
             <h1 className='text-center text-light font-4x1 font-bold'>MINT YOUR NFT NOW</h1>
@@ -60,9 +60,9 @@ const HomeScreen = () => {
               <span className=' font-extrabold font-4xl text-light pt-1 ms-3'>{(ethControl*eth).toFixed(2)} {' '} ETH</span>
             </div>
             <Col className='d-flex justify-content-center my-3 align-items-center'>
-              <Col md={6} className='ethControl font-4xl rounded-pill d-flex align-items-center px-3 py-2' >
+              <Col md={6} className='ethControl font-4xl rounded-pill d-flex align-items-center px-3 py-1' >
                 <Col md={2}>
-                  <span className='ethControl2 py-2 cursor font-extrabold ' onClick={()=>decreaseEth(ethControl)}>-</span>
+                  <span className='ethControl2 py-1 cursor font-extrabold ' onClick={()=>decreaseEth(ethControl)}>-</span>
                 </Col>
                 <Col md={8} className='d-flex'>
                   <input className='border border-0 text-center font-extrabold ' type="number" max={5} min={1} 
@@ -94,7 +94,7 @@ const HomeScreen = () => {
         </Col>
 
       </Row>
-    </div>
+    </Container>
   )
 };
 
